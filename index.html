@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moriarty</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --accent: #c59f6d;
+      --muted: #9aa4b2;
+      --glass: rgba(255, 255, 255, 0.05);
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg, #07101b 0%, #0b1020 100%);
+      color: #e6eef6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-bottom: 1px solid var(--glass);
+      box-shadow: 0 8px 30px rgba(3,6,14,0.6);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--glass);
+      box-shadow: 0 6px 24px rgba(2,6,12,0.5);
+      margin-bottom: 1.5rem;
+    }
+    .card h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+    .card p {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 1.25rem 0;
+      font-size: .95rem;
+      border-top: 1px solid var(--glass);
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Moriarty the Patriot</h1>
+    <p>Fan site sederhana tentang William James Moriarty</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="card">
+      <h2>Sinopsis</h2>
+      <p>
+        "Moriarty the Patriot" bercerita tentang William James Moriarty, seorang jenius
+        yang ingin meruntuhkan sistem kelas bangsawan Inggris dengan caranya sendiri.
+        Website ini hanya contoh sederhana untuk latihan HTML & CSS.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Episode</h2>
+      <p>Beberapa episode populer dari seri ini:</p>
+      <ul>
+        <li>Episode 1 — The Crime Consultant</li>
+        <li>Episode 2 — A Scandal in the British Empire</li>
+        <li>Episode 3 — The Hunting of the Baskervilles</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; <span id="year"></span> Moriarty — Demo Website
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
